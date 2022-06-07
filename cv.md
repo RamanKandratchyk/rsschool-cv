@@ -6,8 +6,8 @@
 + Place of residence: Gomel, Belarus
 
 ### About myself:
-Start learning JavaScript, CSS, HTML. RSSchool is a windfall for me.
-Ready for new knowledge and life changes.
+Started learning JavaScript, CSS, HTML. RSSchool is a windfall for me.
+Ready for new knowledge and for a change in life.
 
 ### Code example:
 ```
@@ -39,3 +39,9 @@ Ready for new knowledge and life changes.
 	};
 </script>
 ```
+### Education:
+Graduated from Belarusian State University.
+Faculty of Physics, Department of energy physics.
+
+### Language:
+English level A2 (all years in school, 4 years in university, plus 3 years of learning German)
