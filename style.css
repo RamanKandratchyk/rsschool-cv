@@ -13,23 +13,39 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background-color: #e3eed5;
 }
 
 header {
-	border: 1px solid red;
-}
+	min-width: 640px;
+	padding: 0 0px;
+	background: linear-gradient(to top, #e3eed5, rgb(96, 238, 143));
 
-main {
-	border: 1px solid rgb(15, 175, 23);
 }
 
 footer {
-	border: 1px solid rgb(24, 22, 155);
+	background: linear-gradient(to bottom, #e3eed5, rgb(96, 238, 143));
+
+}
+
+.photo {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 1px 4px rgba(62, 168, 88, 0.6);
+	filter: grayscale(0.2) brightness(1.0);
+	transition: .3s;
 }
 
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
+}
+
+.container-nav {
+	width: 100%;
+	padding: 0 0px;
 }
 
 .nav-list {
@@ -40,17 +56,112 @@ footer {
 }
 
 .nav-link {
-	padding: 0 20px;
-	line-height: 50px;
 	transition: 1.3s;
+	position: relative;
+	padding: 0 12px;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 50px;
+	color: rgb(58, 92, 202);
+}
+
+.section {
+	padding: 10px 20px;
+	/* padding-bottom: 35px; */
+	border-bottom: 2px solid #13750a;
+}
+
+.section-profile {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 50px 30px 35px;
+	border-bottom: 5px solid #7bb373;
+}
+
+.section-title {
+	margin: 0px auto;
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: #3f4bb6;
+}
+
+.main-title {
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 400;
+	letter-spacing: 5px;
+	color: #3f4bb6;
+}
+
+.section-subtitle {
+	margin-top: 20px;
+	line-height: 50px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #3f4bb6;
+}
+
+.section-profile-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	border: #ac2710;
+	/* text-transform: uppercase; */
+}
+
+.section-item {
+	color: #1f7a2b;
+	text-decoration: none;
+	transition: color 0.5s;
+	font-size: 17px;
 }
 
 .section-item a {
-	color: #829985;
+	color: #35a1cc;
 	text-decoration: none;
 	transition: color 0.5s;
 }
 
 .section-item a:hover {
-	color: #4d2323;
+	color: #0b2d8a;
+}
+
+.link {
+	text-decoration: none;
+	color: #829985;
+	transition: color 0.5s;
+}
+
+.main-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pre {
+	margin: 0px auto;
+	color: #990dc4;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between ;
+	align-items: center;
+	max-width: 1440px;
+	min-width: 585px;
+	/* margin: 10px auto; */
+	padding: 10px 20px;
+}
+
+.logo{
+    width: 120px;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
 }

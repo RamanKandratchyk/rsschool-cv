@@ -15,7 +15,7 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container container-nav">
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
@@ -23,6 +23,7 @@
           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
           <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
           <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
           <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
         </ul>
       </nav>
@@ -31,33 +32,126 @@
 
   <main class="main">
     <div class="container">
-      <section class="section" id="profile">
-
+      <section class="section section-profile" id="profile">
+        <img class="photo" src="./assets/img/photo.png" alt="photo">
+        <div class="section-profile-title">
+          <h1 class="main-title">Raman Kandratchyk</h1>
+          <h3 class="section-subtitle"> Junior Frontend Developer</h3>
+        </div>
       </section>
+
       <section class="section" id="contacts">
-
+        <h2 class="section-title">Contacts</h2>
+        <ul class="section-list">
+          <li class="section-item contacts-item">
+            Place of resident: Gomel, Belarus
+          </li>
+          <li class="section-item contacts-item">
+            Email: <a href="mailto:kondrator@gmail.com" title="Email">kondrator@gmail.com</a>
+          </li>
+          <li class="section-item contacts-item">
+            Github: <a href="https://github.com/ramankandratchyk" title="Github">ramankandratchyk</a>
+          </li>
+          <li class="section-item contacts-item">
+            Discord: <a href="https://discord.gg/zUr7wWYPXE" title="Discord">Raman Kandratchyk#2279</a>
+          </li>
+        </ul>
       </section>
+
       <section class="section" id="summary">
-
+        <h2 class="section-title">Summary</h2>
+        <p class="section-item">Started learning JavaScript, CSS, HTML. RSSchool is a windfall for me.
+          Ready for new knowledge and for a change in life.
+        </p>
       </section>
+
       <section class="section" id="skills">
-
+        <h2 class="section-title">Skills</h2>
+        <ul class="section-list">
+          <li class="section-item">
+            Web-development:<span> HTML5, CSS3, JavaScript</span>
+          </li>
+          <li class="section-item">
+            Frameworks and libraries:<span> React</span>
+          </li>
+          <li class="section-item">
+            Version control:<span> GIT, Github</span>
+          </li>
+          <li class="section-item">
+            Graphics:<span> Figma</span>
+          </li>
+          <li class="section-item">
+            Typing:<span> Blind ten-finger typing method (Eng & Rus)</span>
+          </li>
+        </ul>
       </section>
-      <section class="section" id="education">
 
-      </section>
       <section class="section" id="code">
+        <h2 class="section-title">Code</h2>
+        <pre class="pre"><code>
+            'use strict';
 
+            let arrNumber = [1, 6, 7, 8, 3, 4, 5, 6];
+            const findNumber1 = 8;
+            const findNumber2 = 12;
+            const findNumber3 = 6;
+
+            findIndex(arrNumber, findNumber1);
+            findIndex(arrNumber, findNumber2);
+            findIndex(arrNumber, findNumber3);
+
+            function findIndex(array, value) {
+              let i = 0;
+              let indexArr = [];
+              let indexes = array.filter(function (item, index, array) {
+                if (item == value) {
+                  indexArr[i++] = index;
+                  return true;
+                };
+              });
+              let strMultPos = indexArr.join(', ');
+              let answer = (indexes.length == 0) ? `There is no number ${value} in array` :
+                `Number ${value} has next positions in array: ` + strMultPos;
+              alert(`Initial array: ${array} \n${answer}`);
+            };
+        </code></pre>
       </section>
-      <section class="section" id="english">
 
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <p class="section-item">Graduated from Belarusian State University.
+          <a href="https://bsu.by/structure/faculties/kafedry/kafedra-energofiziki-d" target="_blank"
+            title="Energy physics">Faculty of Physics, Department of energy physics.</a>
+        </p>
+        <p class="section-item">Additionally graduated from the military department of BSU</p>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-item contacts-item">
+          CV: <a href="https://ramankandratchyk.github.io/rsschool-cv/cv" target="_blank" title="Markdown CV">Markdown
+            CV</a></p>
+      </section>
+
+      <section class="section" id="english">
+        <h2 class="section-title">English</h2>
+        <p class="section-item">English level: A2 (all years in school, 4 years in university, plus 3 years of learning
+          German)</p>
       </section>
     </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-
+  <footer>
+    <div class="footer">
+      <!-- <div class="section-item"><a href="https://github.com/ramankandratchyk" target="_blank">GitHub ramankandratchyk</a>
+      </div> -->
+      <div class="rsschool"><a href="https://github.com/ramankandratchyk" target="_blank"><img class="logo"
+            src="./assets/img/github-logo.png" alt="GitHub logo"></a>
+      </div>
+      <div class="section-title"> <time>2022</time> </div>
+      <div class="rsschool"><a href="https://rs.school/js/" target="_blank"><img class="logo"
+            src="./assets/img/rs_school_js.svg" alt="RSS logo"></a>
+      </div>
     </div>
   </footer>
 
